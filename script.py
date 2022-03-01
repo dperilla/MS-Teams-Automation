@@ -7,15 +7,15 @@ from datetime import datetime
 
 try:
     # open MS Teams application
-    os.startfile("C:/Users/username/AppData/Local/Microsoft/Teams/current/Teams.exe") 
+    #os.startfile("/usr/bin/teams") 
     sleep(2)
     # settings
-    settings = pyautogui.locateCenterOnScreen("settings.PNG") 
+    settings = pyautogui.locateCenterOnScreen("Images/settings.PNG") 
     pyautogui.moveTo(settings)
     pyautogui.click()
     time.sleep(2)
     # manageteams.PNG
-    manageteams = pyautogui.locateCenterOnScreen("manageteams.PNG") 
+    manageteams = pyautogui.locateCenterOnScreen("Images/manageteams.PNG") 
     pyautogui.moveTo(manageteams)
     pyautogui.click()
     time.sleep(2)
@@ -26,30 +26,30 @@ while True:
     #DemoMeetOne
     now = datetime.now().strftime("%H:%M")
     if now < '11:00':
-        DemoMeetOne = pyautogui.locateCenterOnScreen("DemoMeetOne.PNG") 
+        DemoMeetOne = pyautogui.locateCenterOnScreen("Images/joinnow.PNG") 
         pyautogui.moveTo(DemoMeetOne)
         pyautogui.click()
         time.sleep(2)
-        join = pyautogui.locateCenterOnScreen("join.PNG") 
+        join = pyautogui.locateCenterOnScreen("Images/join.PNG") 
         pyautogui.moveTo(join)
         pyautogui.click()
         time.sleep(2)
-        audiooff = pyautogui.locateCenterOnScreen("audiooff.PNG") 
+        audiooff = pyautogui.locateCenterOnScreen("Images/audiooff.PNG") 
         pyautogui.moveTo(audiooff)
         pyautogui.click()
         time.sleep(2)
         
     elif now <'10:00':
       	#DemoMeetTwo
-        DemoMeetTwo = pyautogui.locateCenterOnScreen("DemoMeetTwo.PNG") 
+        DemoMeetTwo = pyautogui.locateCenterOnScreen("ImagesDemoMeetTwo.PNG") 
         pyautogui.moveTo(DemoMeetTwo)
         pyautogui.click()
         time.sleep(2)
-        join = pyautogui.locateCenterOnScreen("join.PNG") 
+        join = pyautogui.locateCenterOnScreen("Images/join.PNG") 
         pyautogui.moveTo(join)
         pyautogui.click()
         time.sleep(2)
-        audiooff = pyautogui.locateCenterOnScreen("audiooff.PNG") 
+        audiooff = pyautogui.locateCenterOnScreen("Images/audiooff.PNG") 
         pyautogui.moveTo(audiooff)
         pyautogui.click()
         time.sleep(2)
